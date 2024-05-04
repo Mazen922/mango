@@ -1,0 +1,284 @@
+/* Start Global Reset  */
+* {
+  --yellow: #fec442;
+  --Green: #02635a;
+  --Red: #aa353e;
+  --gray: #e8e7e6;
+  --blue: #326af9;
+  --white: #fafafa;
+  --text-color-two: #fff;
+  --text-color: #1f1f1f;
+  --background-color: #e8e7e6;
+  ---secondary-text: #636363;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif !important;
+  color: var(--text-color);
+  background-color: var(--white) !important;
+  transition: all 0.5s;
+}
+/* Start navbar Space  */
+.container-fluid .navbar {
+  color: var(--text-color-two);
+  background-color: var(--Green) !important;
+}
+/* resizing engine responsively RSF For Header => h1 */
+.hero-section .h1 {
+  font-size: calc(1.525rem + 3.3vw);
+}
+
+@media (min-width: 1200px) {
+  .hero-section .h1 {
+    font-size: 4rem;
+  }
+}
+/* navbar-dark navbar-toggler Space Editing */
+.container-fluid .navbar-dark .navbar-toggler {
+  color: var(--text-color-two);
+  border-color: var(--text-color-two);
+  border-width: 2px;
+}
+.navbar ul {
+  justify-content: center;
+  width: 100%;
+  gap: 50px;
+}
+.navbar li {
+  transition: all 3s;
+}
+.nav-item .nav-link {
+  transition: all 1s;
+  color: var(--white);
+}
+.btn {
+  background-color: var(--yellow);
+  color: var(--text-color);
+  font-weight: bold;
+  border-radius: 4px;
+  font-weight: 700 !important;
+  margin: 5px;
+  padding: 6px 20px;
+  /*  */
+}
+.start-now-btn {
+  padding: 10px 32px;
+  border: none;
+  background: var(--Green);
+  color: var(--text-color-two);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 20px;
+}
+form .signup {
+  background: var(--background-color);
+}
+form .signup:hover {
+  background-color: var(--yellow);
+  /* border: 1px solid var(--text-color); */
+}
+form .login {
+  background-color: transparent;
+  border: 1px solid var(--background-color);
+  color: var(--white);
+}
+form .login:hover {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+/* This Styled link is showing the Active state of current page  */
+.active-link {
+  color: var(--yellow) !important;
+  border-bottom: 1px solid var(--yellow);
+}
+
+/* Hero Section */
+.hero-section {
+  /* min-height: 76vh !important; */
+  margin-bottom: 100px !important;
+}
+
+/* What Mango Gate Offers Space  */
+
+/* Card Editing Space  */
+.container-fluid .card {
+  background-size: cover;
+  /* padding: 0; */
+  border: none;
+  /* background-color: var(--yellow); */
+  /* padding: 0px; */
+}
+/* Header Of Offer */
+.header-offers {
+  text-align: center;
+}
+/* Image Editing Space */
+.card .img-fluid {
+  border-radius: 16px;
+  opacity: 0.8;
+  transition: opacity 0.5s;
+}
+.container-fluid .img-fluid:hover {
+  /* box-shadow: 1px 1px 1px 1px var(--yellow); */
+  opacity: 1;
+}
+
+/* Top Rated Course */
+.top-rated-col {
+  background-color: white;
+  /* box-shadow: 0 0 1px 1px var(--text-color); */
+  /* border-radius: 16px !important; */
+}
+.top-rated-col .top-rated img {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.top-rated-col .top-rated {
+  box-shadow: 0px 2px 5px 0px gray;
+  transition: all 0.5s;
+  border-radius: 16px;
+}
+.top-rated-col .top-rated:hover {
+  box-shadow: 0px 5px 5px 0px var(--yellow);
+}
+.top-details .more-details {
+  display: flex;
+  justify-content: space-between;
+}
+/* Button Top */
+.card-body .btn-top {
+  background-color: var(--Green);
+  color: var(--text-color-two);
+}
+.card-body .btn-top:hover {
+  color: var(--yellow);
+  background-color: #06574f;
+}
+
+/* top-course-price */
+.top-course-price {
+  font-weight: bold;
+  font-size: 24px;
+  color: var(--blue);
+}
+.top-deleted-price {
+  font-size: 16px;
+  font-weight: bold;
+}
+/* rating-list Space */
+.container .rating-list {
+  display: flex;
+  /* justify-content: space-evenly; */
+}
+/* rating-list Space */
+.rating-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+  flex-wrap: wrap;
+  font-weight: 600;
+  gap: 5px;
+}
+.rating-list li svg {
+  background: var(--Green);
+  color: var(--white);
+  width: 30px;
+  padding: 5px;
+  /* border: 1px solid black; */
+}
+.rating-list li:last-of-type {
+  padding: 3px;
+}
+/* Global-Community Container Space  */
+.container .image-container .image {
+  border-radius: 16px !important;
+}
+.container .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr !important;
+}
+.container .grid h6 {
+  padding-left: 1rem;
+}
+.container .grid .grid--one,
+.grid--two,
+.grid--three,
+.grid--four {
+  background-color: var(--Green);
+  color: var(--text-color-two);
+  padding: 1rem;
+  margin: 10px;
+}
+.container .grid .grid--one,
+.grid--four {
+  border-top-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+.container .grid .grid--two,
+.grid--three {
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.container .grid .grid--one,
+.grid--two,
+.grid--three,
+.grid--four,
+p {
+  padding-top: 1rem;
+}
+
+/* testmonial space */
+.container .test-card {
+  background-color: #ebebeb;
+  border: none !important;
+  border-radius: 16px;
+}
+.container .testmonial {
+  padding: 1rem;
+  border-radius: 16px !important;
+}
+/* Image Test */
+.container .testmonial .img-test {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  /* align-content: space-between; */
+  gap: 2rem;
+  padding-top: 3rem;
+  align-items: center;
+  margin-bottom: -3rem;
+  color: var(--blue);
+  font-weight: 600;
+}
+.container .testmonial .img-test img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.email-form {
+  justify-content: center;
+}
+.email-form .email-catch {
+  justify-content: flex-start;
+  align-items: center;
+  width: 70%;
+}
+.email-form .email-cont {
+  background: var(--Green);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 9px 10px 0px 4px var(--yellow);
+  color: var(--white);
+}
+.email-form .email-cont .btn {
+  background: var(--text-color-two);
+  color: var(--text-color);
+  border: none;
+}

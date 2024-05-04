@@ -1,0 +1,9 @@
+@media (max-width: 1024px) {
+  .container .grid {
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
+  .container .image-container .image {
+    margin-top: 2rem;
+  }
+}

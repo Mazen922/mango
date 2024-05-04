@@ -1,0 +1,139 @@
+/* Start Global Reset  */
+* {
+  --yellow: #fec442;
+  --Green: #02635a;
+  --Red: #aa353e;
+  --gray: #e8e7e6;
+  --blue: #326af9;
+  --white: #fafafa;
+  --text-color-two: #fff;
+  --text-color: #1f1f1f;
+  --background-color: #e8e7e6;
+  ---secondary-text: #636363;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+  background-color: var(--white);
+}
+.second-header {
+  margin-top: 16px;
+  color: var(---secondary-text);
+}
+/* Start navbar Space  */
+.navbar {
+  color: var(--text-color-two);
+  background-color: var(--Green) !important;
+}
+.navbar ul {
+  justify-content: center;
+  width: 100%;
+  gap: 50px;
+}
+.navbar li {
+  transition: all 3s;
+}
+.nav-item .nav-link {
+  transition: all 1s;
+  color: var(--white);
+}
+.nav-item .our-courses {
+  border-bottom: 1px solid var(--yellow);
+}
+.row input {
+  box-sizing: border-box;
+  border: 2px solid var(--background-color);
+  border-radius: 8px;
+  position: relative;
+  padding: 12px 20px 12px 40px;
+}
+.bi-search {
+  position: absolute;
+  top: 25%;
+  width: 10px;
+  font-size: 20px;
+  color: var(--text-color);
+}
+@media (max-width: 991px) {
+  .bi-search {
+    display: none;
+  }
+}
+/* 📚 */
+.container .card {
+  min-height: 510px;
+  margin-top: 16px !important;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0px 0px 5px gray;
+  transition: all 1s;
+}
+.container .card:hover {
+  box-shadow: 10px 10px 10px var(--yellow);
+  transform: translateY(-1.2rem);
+}
+.card img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Courses details  */
+.details {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.more-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.number-class {
+  font-size: 14px;
+  width: 73px;
+  text-align: center;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  font-weight: 700;
+  color: var(---secondary-text);
+}
+.course-price {
+  color: var(--yellow);
+  font-weight: 600;
+}
+.btn {
+  background-color: var(--yellow);
+  color: var(--text-color);
+  font-weight: bold;
+  border-radius: 4px;
+  margin: 5px;
+  padding: 6px 20px;
+}
+.signup {
+  background: var(--background-color);
+}
+.signup:hover {
+  background-color: var(--yellow);
+  /* border: 1px solid var(--text-color); */
+}
+.login {
+  background-color: transparent;
+  border: 1px solid var(--background-color);
+  color: var(--white);
+}
+.login:hover {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+.capacity {
+  font-size: 14px;
+  width: 73px;
+  text-align: center;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  font-weight: 700;
+  color: var(---secondary-text);
+}
